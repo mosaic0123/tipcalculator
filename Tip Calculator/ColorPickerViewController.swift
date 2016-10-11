@@ -76,6 +76,13 @@ UICollectionViewDelegate {
         // Set border of selected cell
         collectionView.reloadData()
         collectionView.backgroundColor = getColor()
+        
+        self.navigationController?.navigationBar.barTintColor = getColor()
+        self.navigationController?.navigationBar.tintColor = getContrastColor()
+        self.navigationController?.navigationBar.titleTextAttributes = [
+            NSForegroundColorAttributeName: getContrastColor(),
+            NSFontAttributeName: UIFont(name: "AvenirNext-Regular", size: 20)!
+        ]
     }
 
     /*

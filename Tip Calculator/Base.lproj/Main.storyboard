@@ -70,6 +70,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="barButton" destination="vtO-sW-7tW" id="5pz-8f-Krs"/>
                         <outlet property="billField" destination="Ohw-B4-bcn" id="czu-ZR-SSt"/>
                         <outlet property="tipControl" destination="fYT-2h-lDI" id="Osf-Fw-ZGk"/>
                         <outlet property="tipLabel" destination="lPk-Yx-Cji" id="wWV-qk-iu0"/>
@@ -109,7 +110,7 @@
                                             <frame key="frameInset" width="375" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="617C01BA-F834-41A9-94BC-0D9ED384AB8E" translatesAutoresizingMaskIntoConstraints="NO" id="lnQ-Po-EbZ">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0DBC3018-76D8-4701-81B8-A86F4CE9B44D" translatesAutoresizingMaskIntoConstraints="NO" id="lnQ-Po-EbZ">
                                                     <frame key="frameInset" minX="35" minY="51.82%" width="45" height="45"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -143,11 +144,43 @@
                         <segue destination="Jw8-Lh-APc" kind="push" identifier="pickColor" id="qB3-Ct-m4Z"/>
                         <segue destination="pfT-oC-xIP" kind="modal" identifier="pickCurrency" id="mDk-bk-NFI"/>
                         <segue destination="ML7-Jb-2OE" kind="modal" identifier="pickPercentage" id="JK8-hB-Jwi"/>
+                        <segue destination="QgO-4I-mUW" kind="push" identifier="showAbout" id="2tO-gw-QHE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1z-WO-ykJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1193" y="242"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="zNh-4H-l1m">
+            <objects>
+                <viewController id="QgO-4I-mUW" customClass="AboutViewController" customModule="Tip_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JpY-vd-vaN"/>
+                        <viewControllerLayoutGuide type="bottom" id="O0w-9A-xuX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FHe-dj-8oM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTr-zG-hBG">
+                                <frame key="frameInset" minX="23" minY="133" width="328" height="457"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="U27-hI-CY2"/>
+                    <connections>
+                        <outlet property="textView" destination="VTr-zG-hBG" id="wkL-II-fTQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eg8-dw-F0Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878.5" y="-569.5"/>
         </scene>
         <!--Percentage View Controller-->
         <scene sceneID="9E0-SW-Rms">
@@ -354,7 +387,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="617C01BA-F834-41A9-94BC-0D9ED384AB8E" width="64" height="64">
+        <image name="0DBC3018-76D8-4701-81B8-A86F4CE9B44D" width="64" height="64">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

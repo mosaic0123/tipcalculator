@@ -11,37 +11,37 @@ import UIKit
 
 func getColor() -> UIColor {
     let defaults = UserDefaults.standard
-    let colorIndex = defaults.integer(forKey: "colorIndex") ?? 8
+    let colorIndex = defaults.object(forKey: "colorIndex")==nil ? 0 : defaults.integer(forKey: "colorIndex")
     return Constants.Colors.values[colorIndex]
 }
 
 func getContrastColor() -> UIColor {
     let defaults = UserDefaults.standard
-    let colorIndex = defaults.integer(forKey: "colorIndex") ?? 8
+    let colorIndex = defaults.object(forKey: "colorIndex")==nil ? 0 : defaults.integer(forKey: "colorIndex")
     return Constants.contrastColors.values[colorIndex]
 }
 
 func getColorName() -> String {
     let defaults = UserDefaults.standard
-    let colorIndex = defaults.integer(forKey: "colorIndex") ?? 8
+    let colorIndex = defaults.object(forKey: "colorIndex")==nil ? 0 : defaults.integer(forKey: "colorIndex")
     return Constants.colorNames[colorIndex]
 }
 
 func getColorIndex() -> Int {
     let defaults = UserDefaults.standard
-    let colorIndex = defaults.integer(forKey: "colorIndex") ?? 8
+    let colorIndex = defaults.object(forKey: "colorIndex")==nil ? 0 : defaults.integer(forKey: "colorIndex")
     return colorIndex
 }
 
 func getCurrencyIndex() -> Int {
     let defaults = UserDefaults.standard
-    let colorIndex = defaults.integer(forKey: "currencyIndex") ?? 0
-    return colorIndex
+    let currencyIndex = defaults.object(forKey: "currencyIndex")==nil ? 0 : defaults.integer(forKey: "currencyIndex")
+    return currencyIndex
 }
 
 func getPercentage() -> Int {
     let defaults = UserDefaults.standard
-    let percentage = defaults.integer(forKey: "percentage") ?? 20
+    let percentage = defaults.object(forKey: "percentage")==nil ? 15 : defaults.integer(forKey: "percentage")
     return percentage
 }
 
@@ -102,6 +102,20 @@ extension UIViewController {
 //        button.clipsToBounds = true
 //        button.backgroundColor = getContrastColor()
 //        button.imageView?.tintColor = getColor()
+//    }
+    
+}
+
+
+extension UIView {
+    
+    // Shake Animation: http://stackoverflow.com/questions/27987048/shake-animation-for-uitextfield-uiview-in-swift
+//    func shake() {
+//        let animation = CAKeyframeAnimation(keyPath: "transform.translation.x")
+//        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+//        animation.duration = 0.8
+//        animation.values = [-20.0, 20.0, -20.0, 20.0, -10.0, 10.0, -5.0, 5.0, 0.0 ]
+//        layer.add(animation, forKey: "shake")
 //    }
     
 }

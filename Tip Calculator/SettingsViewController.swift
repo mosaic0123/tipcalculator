@@ -12,8 +12,8 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
 
     @IBOutlet weak var tableView: UITableView!
     
-    var menuItemNames = ["Percentage", "Currency", "Theme", "Unknown"]
-    var menuItemIcons = ["percentage", "currency", "theme", "unknown"]
+    var menuItemNames = ["Percentage", "Currency", "Theme", "About"]
+    var menuItemIcons = ["percentage", "currency", "theme", "about"]
     // Only animate in the first load
     
     override func viewWillAppear(_ animated: Bool) {
@@ -63,6 +63,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
         case 0: self.performSegue(withIdentifier: "pickPercentage", sender: indexPath)
         case 1: self.performSegue(withIdentifier: "pickCurrency", sender: indexPath)
         case 2: self.performSegue(withIdentifier: "pickColor", sender: indexPath)
+        case 3: self.performSegue(withIdentifier: "showAbout", sender: indexPath)
         default: print(indexPath.row)
         }
         tableView.deselectRow(at: indexPath, animated: true)

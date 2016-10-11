@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF0F7BE01DAD96FA00AC27BD /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0F7BDF1DAD96FA00AC27BD /* AboutViewController.swift */; };
 		AF8572621DA432A9007DF3D1 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8572611DA432A9007DF3D1 /* ColorPickerViewController.swift */; };
 		AF8572A41DA48213007DF3D1 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8572A31DA48213007DF3D1 /* ColorCollectionViewCell.swift */; };
 		AF8FC87D1DA210F400B85E33 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8FC87C1DA210F400B85E33 /* MenuTableViewCell.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF0F7BDF1DAD96FA00AC27BD /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		AF8572611DA432A9007DF3D1 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 		AF8572A31DA48213007DF3D1 /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF8FC87C1DA210F400B85E33 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF0F7BDE1DAD96E400AC27BD /* About */ = {
+			isa = PBXGroup;
+			children = (
+				AF0F7BDF1DAD96FA00AC27BD /* AboutViewController.swift */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
 		AFBCD5241D91F8E100DE9D3F = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +154,7 @@
 		AFE5F13C1DAB222C005F0A9D /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				AF0F7BDE1DAD96E400AC27BD /* About */,
 				AF8FC87C1DA210F400B85E33 /* MenuTableViewCell.swift */,
 				AFBCD55E1D92034D00DE9D3F /* SettingsViewController.swift */,
 				AFE5F13D1DAB225F005F0A9D /* Colors */,
@@ -321,6 +332,7 @@
 				AFBCD5311D91F8E100DE9D3F /* AppDelegate.swift in Sources */,
 				AF8FC87D1DA210F400B85E33 /* MenuTableViewCell.swift in Sources */,
 				AFBCD55F1D92034D00DE9D3F /* SettingsViewController.swift in Sources */,
+				AF0F7BE01DAD96FA00AC27BD /* AboutViewController.swift in Sources */,
 				AFF4110F1DAB3ADA00E3A17F /* PercentageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
