@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF8572621DA432A9007DF3D1 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8572611DA432A9007DF3D1 /* ColorPickerViewController.swift */; };
+		AF8572A41DA48213007DF3D1 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8572A31DA48213007DF3D1 /* ColorCollectionViewCell.swift */; };
+		AF8FC87D1DA210F400B85E33 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8FC87C1DA210F400B85E33 /* MenuTableViewCell.swift */; };
 		AFBCD5311D91F8E100DE9D3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBCD5301D91F8E100DE9D3F /* AppDelegate.swift */; };
-		AFBCD5331D91F8E100DE9D3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBCD5321D91F8E100DE9D3F /* ViewController.swift */; };
+		AFBCD5331D91F8E100DE9D3F /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBCD5321D91F8E100DE9D3F /* TipViewController.swift */; };
 		AFBCD5361D91F8E100DE9D3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFBCD5341D91F8E100DE9D3F /* Main.storyboard */; };
 		AFBCD5381D91F8E100DE9D3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFBCD5371D91F8E100DE9D3F /* Assets.xcassets */; };
 		AFBCD53B1D91F8E100DE9D3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFBCD5391D91F8E100DE9D3F /* LaunchScreen.storyboard */; };
 		AFBCD5461D91F8E100DE9D3F /* Tip_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBCD5451D91F8E100DE9D3F /* Tip_CalculatorTests.swift */; };
 		AFBCD5511D91F8E100DE9D3F /* Tip_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBCD5501D91F8E100DE9D3F /* Tip_CalculatorUITests.swift */; };
+		AFBCD55F1D92034D00DE9D3F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBCD55E1D92034D00DE9D3F /* SettingsViewController.swift */; };
+		AFCD43A51DA9673A00FAA751 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCD43A41DA9673A00FAA751 /* extensions.swift */; };
+		AFE5F1401DAB2297005F0A9D /* CurrencyPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE5F13F1DAB2297005F0A9D /* CurrencyPickerViewController.swift */; };
+		AFF4110F1DAB3ADA00E3A17F /* PercentageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF4110E1DAB3ADA00E3A17F /* PercentageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF8572611DA432A9007DF3D1 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
+		AF8572A31DA48213007DF3D1 /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
+		AF8FC87C1DA210F400B85E33 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		AFBCD52D1D91F8E100DE9D3F /* Tip Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFBCD5301D91F8E100DE9D3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFBCD5321D91F8E100DE9D3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFBCD5321D91F8E100DE9D3F /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		AFBCD5351D91F8E100DE9D3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFBCD5371D91F8E100DE9D3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFBCD53A1D91F8E100DE9D3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +57,10 @@
 		AFBCD54C1D91F8E100DE9D3F /* Tip CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tip CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFBCD5501D91F8E100DE9D3F /* Tip_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip_CalculatorUITests.swift; sourceTree = "<group>"; };
 		AFBCD5521D91F8E100DE9D3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFBCD55E1D92034D00DE9D3F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AFCD43A41DA9673A00FAA751 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		AFE5F13F1DAB2297005F0A9D /* CurrencyPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyPickerViewController.swift; sourceTree = "<group>"; };
+		AFF4110E1DAB3ADA00E3A17F /* PercentageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +111,11 @@
 		AFBCD52F1D91F8E100DE9D3F /* Tip Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				AFE5F13C1DAB222C005F0A9D /* Settings */,
 				AFBCD5301D91F8E100DE9D3F /* AppDelegate.swift */,
-				AFBCD5321D91F8E100DE9D3F /* ViewController.swift */,
+				AFBCD5321D91F8E100DE9D3F /* TipViewController.swift */,
 				AFBCD5341D91F8E100DE9D3F /* Main.storyboard */,
+				AFCD43A41DA9673A00FAA751 /* extensions.swift */,
 				AFBCD5371D91F8E100DE9D3F /* Assets.xcassets */,
 				AFBCD5391D91F8E100DE9D3F /* LaunchScreen.storyboard */,
 				AFBCD53C1D91F8E100DE9D3F /* Info.plist */,
@@ -123,6 +139,43 @@
 				AFBCD5521D91F8E100DE9D3F /* Info.plist */,
 			);
 			path = "Tip CalculatorUITests";
+			sourceTree = "<group>";
+		};
+		AFE5F13C1DAB222C005F0A9D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AF8FC87C1DA210F400B85E33 /* MenuTableViewCell.swift */,
+				AFBCD55E1D92034D00DE9D3F /* SettingsViewController.swift */,
+				AFE5F13D1DAB225F005F0A9D /* Colors */,
+				AFE5F13E1DAB227B005F0A9D /* Currency */,
+				AFF4110D1DAB3ABF00E3A17F /* Percentage */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		AFE5F13D1DAB225F005F0A9D /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				AF8572611DA432A9007DF3D1 /* ColorPickerViewController.swift */,
+				AF8572A31DA48213007DF3D1 /* ColorCollectionViewCell.swift */,
+			);
+			name = Colors;
+			sourceTree = "<group>";
+		};
+		AFE5F13E1DAB227B005F0A9D /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				AFE5F13F1DAB2297005F0A9D /* CurrencyPickerViewController.swift */,
+			);
+			name = Currency;
+			sourceTree = "<group>";
+		};
+		AFF4110D1DAB3ABF00E3A17F /* Percentage */ = {
+			isa = PBXGroup;
+			children = (
+				AFF4110E1DAB3ADA00E3A17F /* PercentageViewController.swift */,
+			);
+			name = Percentage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,13 +246,17 @@
 				TargetAttributes = {
 					AFBCD52C1D91F8E100DE9D3F = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6CPHQP7BRL;
+						LastSwiftMigration = 0800;
 					};
 					AFBCD5401D91F8E100DE9D3F = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = AFBCD52C1D91F8E100DE9D3F;
 					};
 					AFBCD54B1D91F8E100DE9D3F = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = AFBCD52C1D91F8E100DE9D3F;
 					};
 				};
@@ -256,8 +313,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFBCD5331D91F8E100DE9D3F /* ViewController.swift in Sources */,
+				AF8572A41DA48213007DF3D1 /* ColorCollectionViewCell.swift in Sources */,
+				AFE5F1401DAB2297005F0A9D /* CurrencyPickerViewController.swift in Sources */,
+				AF8572621DA432A9007DF3D1 /* ColorPickerViewController.swift in Sources */,
+				AFBCD5331D91F8E100DE9D3F /* TipViewController.swift in Sources */,
+				AFCD43A51DA9673A00FAA751 /* extensions.swift in Sources */,
 				AFBCD5311D91F8E100DE9D3F /* AppDelegate.swift in Sources */,
+				AF8FC87D1DA210F400B85E33 /* MenuTableViewCell.swift in Sources */,
+				AFBCD55F1D92034D00DE9D3F /* SettingsViewController.swift in Sources */,
+				AFF4110F1DAB3ADA00E3A17F /* PercentageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,10 +463,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6CPHQP7BRL;
 				INFOPLIST_FILE = "Tip Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Tingting-Gao.Tip-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -410,10 +477,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6CPHQP7BRL;
 				INFOPLIST_FILE = "Tip Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Tingting-Gao.Tip-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -425,6 +495,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Tingting-Gao.Tip-CalculatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tip Calculator.app/Tip Calculator";
 			};
 			name = Debug;
@@ -437,6 +508,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Tingting-Gao.Tip-CalculatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tip Calculator.app/Tip Calculator";
 			};
 			name = Release;
@@ -448,6 +520,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Tingting-Gao.Tip-CalculatorUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Tip Calculator";
 			};
 			name = Debug;
@@ -459,6 +532,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Tingting-Gao.Tip-CalculatorUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Tip Calculator";
 			};
 			name = Release;
@@ -482,6 +556,7 @@
 				AFBCD5571D91F8E100DE9D3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFBCD5581D91F8E100DE9D3F /* Build configuration list for PBXNativeTarget "Tip CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +565,7 @@
 				AFBCD55A1D91F8E100DE9D3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFBCD55B1D91F8E100DE9D3F /* Build configuration list for PBXNativeTarget "Tip CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +574,7 @@
 				AFBCD55D1D91F8E100DE9D3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
