@@ -58,7 +58,6 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("view did appear")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -68,7 +67,6 @@ class ViewController: UIViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        print("view did disappear")
     }
     
     override func didReceiveMemoryWarning() {
@@ -85,8 +83,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func calculateTip(_ sender: AnyObject) {
-        
-        print(getPercentage())
         let bill = Double(billField.text!) ?? 0
         let percentage = tipControl.selectedSegmentIndex == UISegmentedControlNoSegment ? Double(getPercentage())/100.0 : tipPercentages[tipControl.selectedSegmentIndex]
         let tip = bill * percentage
